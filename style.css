@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: url('social.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .container {
+    background: rgba(91, 33, 182, 0.9);
+    padding: 2.5em 3em;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 420px;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e1065;
+    color: #f3e8ff;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  input::placeholder {
+    color: #d8b4fe;
+  }
+  
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.5);
+    background-color: #4c1d95;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75em;
+    background: #f43f5e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #e11d48;
+  }
+  
+  .error {
+    color: #ffb4b4;
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  a {
+    color: #93c5fd;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .top-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+  }
+  
+  .logout {
+    color: #fca5a5;
+    font-weight: bold;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 5em;
+    padding: 0.75em;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e1065;
+    color: #f3e8ff;
+    resize: vertical;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  .posts {
+    margin-top: 1.5em;
+    overflow-y: auto;
+    max-height: 500px;
+  }
+  
+  .post {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    color: #e0e7ff;
+  }
+  
+  hr {
+    margin-top: 2em;
+    border: none;
+    border-top: 1px solid #4c1d95;
+  }
+  
+  
