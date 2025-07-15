@@ -37,6 +37,7 @@ project/
 ├── logout.php           # ログアウト処理
 ├── style.css            # 共通スタイル（Truth Social風）
 ├── bg.jpg               # 背景画像（任意）
+├── init.php             # 初期化スクリプト（安全キー付き）
 └── README.md
 ```
 
@@ -66,34 +67,19 @@ XAMPP: C:\\xampp\\htdocs\\summer-web-app
 
 3. MAMP または XAMPP を起動し、MySQL を有効にします。
 
-4. ブラウザで phpMyAdmin を開き、`users` というデータベースを作成：
+4. 初期化スクリプトを1度だけ実行：
 
-- MAMP: `http://localhost/phpMyAdmin/`
-- XAMPP: `http://localhost/phpmyadmin/`
-
-5. 以下の SQL を実行してテーブルを作成：
-
-```sql
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  password VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE posts (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  user VARCHAR(255) NOT NULL,
-  content TEXT NOT NULL
-);
+```
+http://localhost/summer-web-app/init.php?key=letmein
 ```
 
-6. ブラウザでログインページを開く：
+> 完了後は `init.php` を削除または無効化してください。
+
+5. ブラウザでログインページを開く：
 
 ```
 http://localhost/summer-web-app/login.php
 ```
-
-7. `register.php` からアカウントを登録して使用開始！
 
 ---
 
@@ -107,17 +93,6 @@ Truth Social を参考にした、モダンで読みやすい UI:
 
 背景画像は `style.css` の `body` にて `bg.jpg` を指定しています。
 好きな画像に差し替えてお使いください。
-
----
-
-## ✅ テストユーザー（任意）
-
-```text
-ユーザー名: test
-パスワード: 1234
-```
-
-> ※ `register.php` から新規登録も可能です
 
 ---
 
