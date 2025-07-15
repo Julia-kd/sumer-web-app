@@ -55,7 +55,7 @@ project/
 1. このリポジトリをダウンロードまたはクローン：
 
 ```bash
-git clone https://github.com/your-username/summer-web-app.git
+git clone git@github.com:Julia-kd/sumer-web-app.git
 ```
 
 2. プロジェクトを `htdocs`（MAMP）または `www`（XAMPP）に配置：
